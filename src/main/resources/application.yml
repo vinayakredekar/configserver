@@ -1,0 +1,18 @@
+server:
+  port: 8071
+spring:
+  application:
+    name: configserver
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        #native:
+        #  search-locations: "classpath:/config"
+        git:
+          url: "https://github.com/vinayakredekar/configserver.git"
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true

@@ -1,0 +1,13 @@
+
+spring:
+  config:
+    activate:
+      on-profile: "qa"
+
+build:
+  version: 2.0-qa
+
+contact-info:
+  name: Vinayak R
+  address: Melville Park
+  phone: +65 85136635
